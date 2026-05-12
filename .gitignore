@@ -1,0 +1,36 @@
+# ---- 权重与导出（体积大，用 README 说明如何下载）----
+*.pt
+*.pth
+*.onnx
+*.engine
+*.mlmodel
+*.tflite
+
+# ---- 数据与训练产物 ----
+dataset/
+data/
+output/
+outputs/
+runs/
+runs_v8/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+.env
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# ---- 工具与系统 ----
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+wandb/
+*.log
