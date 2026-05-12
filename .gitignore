@@ -1,5 +1,6 @@
-# ---- 权重与导出（体积大，用 README 说明如何下载）----
+# ---- 权重与导出（体积大；根目录 yolov8n.pt 见文末例外）----
 *.pt
+!yolov8n.pt
 *.pth
 *.onnx
 *.engine
@@ -9,7 +10,10 @@
 # ---- 数据与训练产物 ----
 dataset/
 data/
-output/
+# 仅跟踪 output/YOLO_fish_e900，其余 run 仍忽略
+output/*
+!output/YOLO_fish_e900/
+!output/YOLO_fish_e900/**
 outputs/
 runs/
 runs_v8/
